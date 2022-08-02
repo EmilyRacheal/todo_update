@@ -1,0 +1,21 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: montserrat;
+}
+.hero {
+  background: #040c3a;
+  /* height: 200px; */
+}
+
+.textInput {
+  background: none;
+  width: 70%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #bdbdbd;
+}
+
+.textInput input {
+  background: none;
+  outline: none;
+}
