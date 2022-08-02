@@ -2,6 +2,9 @@ import React from "react";
 import styles from "./categoryCard.module.css";
 import { MdColorLens } from "react-icons/md";
 import { AiOutlinePlus } from "react-icons/ai";
+import { GiBookmarklet } from "react-icons/gi";
+import { IoIosPeople } from "react-icons/io";
+import { MdOutlineBorderColor } from "react-icons/md";
 
 function Index() {
   return (
@@ -23,7 +26,7 @@ function Index() {
           {/* ====second category card ==== */}
 
           <div className={`${styles.categoryBlue} py-5 px-5 w-40`}>
-            <MdColorLens size={40} color="white" />
+            <MdOutlineBorderColor size={40} color="white" />
             <h2 className="font-semibold text-lg">Prototyping</h2>
             <div className="flex items-center mb-2">
               <div className={`${styles.dotTask} `}></div>
@@ -38,7 +41,7 @@ function Index() {
           {/* ====Third category card ==== */}
 
           <div className={`${styles.categoryYellow} py-5 px-5 w-40`}>
-            <MdColorLens size={40} color="white" />
+            <IoIosPeople size={40} color="white" />
             <h2 className="font-semibold text-lg">Meeting</h2>
             <div className="flex items-center mb-2">
               <div className={`${styles.dotTask} `}></div>
@@ -53,7 +56,7 @@ function Index() {
           {/* ====fourth category card ==== */}
 
           <div className={`${styles.categorycyan} py-5 px-5 w-40`}>
-            <MdColorLens size={40} color="white" />
+            <GiBookmarklet size={40} color="white" />
             <h2 className="font-semibold text-lg">Learning</h2>
             <div className="flex items-center mb-2">
               <div className={`${styles.dotTask} `}></div>
