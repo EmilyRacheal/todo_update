@@ -4,3 +4,11 @@
   height: 40px;
   border-radius: 10px;
 }
+
+.todayNum {
+  background: #ecfefb;
+  border: 1px solid #51d7bc;
+  width: 20px;
+  height: 20px;
+  color: #51d7bc;
+}

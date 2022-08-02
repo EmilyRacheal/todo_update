@@ -6,7 +6,7 @@ function Index() {
   return (
     <div>
       <div className="flex justify-between">
-        <div className="flex">
+        <div className="flex items-center">
           <div className={`${styles.paint} flex items-center justify-center`}>
             <RiPaintFill size={20} color="white" />
           </div>
@@ -15,7 +15,11 @@ function Index() {
             <p className="text-xs text-gray-500">2 Completed</p>
           </div>
         </div>
-        <div>4</div>
+        <div
+          className={`${styles.todayNum} flex items-center justify-center text-sm font-bold`}
+        >
+          4
+        </div>
       </div>
     </div>
   );
