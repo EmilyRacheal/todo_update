@@ -24,10 +24,10 @@ function Index() {
 
           <div className={`${styles.categoryBlue} py-5 px-5 w-40`}>
             <MdColorLens size={40} color="white" />
-            <h2 className="font-semibold text-lg">Design</h2>
+            <h2 className="font-semibold text-lg">Prototyping</h2>
             <div className="flex items-center mb-2">
               <div className={`${styles.dotTask} `}></div>
-              <p className="ml-2 text-sm">5 task</p>
+              <p className="ml-2 text-sm">2 task</p>
             </div>
 
             <AiOutlinePlus size={20} />
@@ -39,16 +39,31 @@ function Index() {
 
           <div className={`${styles.categoryYellow} py-5 px-5 w-40`}>
             <MdColorLens size={40} color="white" />
-            <h2 className="font-semibold text-lg">Design</h2>
+            <h2 className="font-semibold text-lg">Meeting</h2>
             <div className="flex items-center mb-2">
               <div className={`${styles.dotTask} `}></div>
-              <p className="ml-2 text-sm">5 task</p>
+              <p className="ml-2 text-sm">1 task</p>
             </div>
 
             <AiOutlinePlus size={20} />
           </div>
 
           {/* =====end of third category card ===== */}
+
+          {/* ====fourth category card ==== */}
+
+          <div className={`${styles.categorycyan} py-5 px-5 w-40`}>
+            <MdColorLens size={40} color="white" />
+            <h2 className="font-semibold text-lg">Learning</h2>
+            <div className="flex items-center mb-2">
+              <div className={`${styles.dotTask} `}></div>
+              <p className="ml-2 text-sm">3 task</p>
+            </div>
+
+            <AiOutlinePlus size={20} />
+          </div>
+
+          {/* =====end of fourth category card ===== */}
         </div>
       </div>
     </div>

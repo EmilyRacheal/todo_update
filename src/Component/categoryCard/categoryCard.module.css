@@ -11,6 +11,10 @@
   background-color: #ffbd35;
   border-radius: 15px;
 }
+.categorycyan {
+  background: #5455ba;
+  border-radius: 15px;
+}
 
 .dotTask {
   height: 7px;
