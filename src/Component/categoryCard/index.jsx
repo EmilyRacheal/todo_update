@@ -11,7 +11,7 @@ function Index() {
     <div>
       <div className={`${styles.category} pt-10 text-white`}>
         <h1 className=" text-3xl text-white">Category</h1>
-        <div className="grid grid-cols-4 gap-4 py-5">
+        <div className="flex gap-x-10 py-5">
           <div className={`${styles.categoryBg} py-5 px-5 w-40`}>
             <MdColorLens size={40} color="white" />
             <h2 className="font-semibold text-lg">Design</h2>
