@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Hero.module.css";
 import { HiOutlineSearch } from "react-icons/hi";
 import { MdColorLens } from "react-icons/md";
+import { AiOutlinePlus } from "react-icons/ai";
 
 function Index() {
   return (
@@ -23,9 +24,17 @@ function Index() {
         </form>
         <div className={`${styles.category} pt-10 text-white`}>
           <h1 className=" text-3xl text-white">Category</h1>
-          <div>
-            <MdColorLens size={40} color="white" />
-            <h2>Design</h2>
+          <div className="grid grid-cols-4 gap-4 py-5">
+            <div className={`${styles.categoryBg} py-5 px-5 w-40`}>
+              <MdColorLens size={40} color="white" />
+              <h2 className="font-semibold text-lg">Design</h2>
+              <div className="flex items-center mb-2">
+                <div className={`${styles.dotTask} `}></div>
+                <p className="ml-2 text-sm">5 task</p>
+              </div>
+
+              <AiOutlinePlus size={20} />
+            </div>
           </div>
         </div>
       </div>
