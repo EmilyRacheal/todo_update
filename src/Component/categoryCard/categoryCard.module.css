@@ -1,0 +1,21 @@
+/* ===== styling for the category ==== */
+.categoryBg {
+  background: #ff4674;
+  border-radius: 15px;
+}
+.categoryBlue {
+  background: #099efe;
+  border-radius: 15px;
+}
+.categoryYellow {
+  background-color: #ffbd35;
+  border-radius: 15px;
+}
+
+.dotTask {
+  height: 7px;
+  width: 7px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+}
