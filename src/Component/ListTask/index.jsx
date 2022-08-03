@@ -2,7 +2,9 @@ import React from "react";
 import styles from "./listtask.module.css";
 import { RiPaintFill } from "react-icons/ri";
 
-function Index() {
+function Index(props) {
+  console.log(props);
+  console.log(props.todayCategory);
   return (
     <div>
       <div className="flex justify-between">
