@@ -6,18 +6,21 @@ import { GiBookmarklet } from "react-icons/gi";
 import { IoIosPeople } from "react-icons/io";
 import { MdOutlineBorderColor } from "react-icons/md";
 
-function Index() {
+function Index({ cardIcon, cardTitle, cardTask, cardBg }) {
   return (
     <div>
       <div className={`${styles.category} pt-10 text-white`}>
         <h1 className=" text-3xl text-white">Category</h1>
         <div className="flex gap-x-10 py-5">
-          <div className={`${styles.categoryBg} py-5 px-5 w-40`}>
-            <MdColorLens size={40} color="white" />
-            <h2 className="font-semibold text-lg">Design</h2>
+          <div
+            className={`${styles.categoryBg} py-5 px-5 w-40`}
+            style={{ background: cardBg }}
+          >
+            {cardIcon}
+            <h2 className="font-semibold text-lg">{cardTitle}</h2>
             <div className="flex items-center mb-2">
               <div className={`${styles.dotTask} `}></div>
-              <p className="ml-2 text-sm">5 task</p>
+              <p className="ml-2 text-sm">{cardTask}</p>
             </div>
 
             <AiOutlinePlus size={20} />
