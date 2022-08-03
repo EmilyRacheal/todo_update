@@ -2,25 +2,36 @@ import React from "react";
 import styles from "./listtask.module.css";
 import { RiPaintFill } from "react-icons/ri";
 
-function Index(props) {
-  console.log(props);
-  console.log(props.todayCategory);
+function Index({
+  todayCategory,
+  todayTrack,
+  todayNumber,
+  Icon,
+  color,
+  numColor,
+  numBg,
+  numBorder,
+}) {
   return (
     <div>
-      <div className="flex justify-between">
+      <div className="flex justify-between mt-4">
         <div className="flex items-center">
-          <div className={`${styles.paint} flex items-center justify-center`}>
-            <RiPaintFill size={20} color="white" />
+          <div
+            className={`${styles.paint} flex items-center justify-center`}
+            style={{ background: color }}
+          >
+            {Icon}
           </div>
           <div className="ml-3">
-            <h3 className="text-sm font-bold">Sketching</h3>
-            <p className="text-xs text-gray-500">2 Completed</p>
+            <h3 className="text-sm font-bold">{todayCategory}</h3>
+            <p className="text-xs text-gray-500">{todayTrack}</p>
           </div>
         </div>
         <div
           className={`${styles.todayNum} flex items-center justify-center text-sm font-bold`}
+          style={{ color: numColor, background: numBg, border: numBorder }}
         >
-          4
+          {todayNumber}
         </div>
       </div>
     </div>

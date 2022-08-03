@@ -15,7 +15,11 @@ function Index() {
               todayCategory={item.todayCategory}
               todayTrack={item.todayTrack}
               todayNumber={item.todayNumber}
-              icon={item.icon}
+              Icon={item.Icon}
+              color={item.color}
+              numColor={item.numColor}
+              numBg={item.numBg}
+              numBorder={item.numBorder}
             />
           );
         })}
