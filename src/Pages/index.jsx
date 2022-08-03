@@ -4,6 +4,7 @@ import { HiOutlineSearch } from "react-icons/hi";
 import CategoryCard from "../Component/categoryCard/index";
 import TodayTask from "../Component/today'sTask/index";
 import { categoryData } from "../UtilsData/index";
+import Category from "../Component/category/index";
 
 function Index() {
   return (
@@ -24,16 +25,7 @@ function Index() {
           </div>
         </form>
 
-        {categoryData.map((item) => {
-          return (
-            <CategoryCard
-              cardIcon={item.cardIcon}
-              cardTitle={item.cardTitle}
-              cardTask={item.cardTask}
-              cardBg={item.cardBg}
-            />
-          );
-        })}
+        <Category />
       </div>
       <TodayTask />
     </div>
