@@ -5,6 +5,7 @@ import CategoryCard from "../Component/categoryCard/index";
 import TodayTask from "../Component/today'sTask/index";
 import { categoryData } from "../UtilsData/index";
 import Category from "../Component/category/index";
+import { AiOutlinePlus } from "react-icons/ai";
 
 function Index() {
   return (
@@ -28,6 +29,9 @@ function Index() {
         <Category />
       </div>
       <TodayTask />
+      <div>
+        <AiOutlinePlus size={20} color="white" />
+      </div>
     </div>
   );
 }
