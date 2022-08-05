@@ -13,7 +13,7 @@ function Index({
   numBorder,
 }) {
   return (
-    <div>
+    <div className="">
       <div className="flex justify-between mt-4">
         <div className="flex items-center">
           <div

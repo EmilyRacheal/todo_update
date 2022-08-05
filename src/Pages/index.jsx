@@ -9,7 +9,7 @@ import { AiOutlinePlus } from "react-icons/ai";
 
 function Index() {
   return (
-    <div className={`${styles.hero} `}>
+    <div className={`${styles.hero} relative`}>
       <div className="px-10 py-10">
         <div className={`${styles.heroBg} w-full py-5`}>
           <h4 className="text-lg text-white">Hello</h4>
@@ -29,7 +29,9 @@ function Index() {
         <Category />
       </div>
       <TodayTask />
-      <div className={`${styles.addBtn}`}>
+      <div
+        className={`${styles.addBtn} flex items-center justify-center absolute mb-5`}
+      >
         <AiOutlinePlus size={20} color="white" />
       </div>
     </div>
