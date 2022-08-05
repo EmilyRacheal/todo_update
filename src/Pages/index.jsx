@@ -29,7 +29,7 @@ function Index() {
         <Category />
       </div>
       <TodayTask />
-      <div>
+      <div className={`${styles.addBtn}`}>
         <AiOutlinePlus size={20} color="white" />
       </div>
     </div>
