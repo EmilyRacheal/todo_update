@@ -35,7 +35,9 @@ function Index() {
       >
         <AiOutlinePlus size={20} color="white" />
       </div>
-      <Modal />
+      <div className={`${styles.modalBox}`}>
+        <Modal />
+      </div>
     </div>
   );
 }

@@ -1,3 +1,15 @@
 .textInput {
   outline: none;
 }
+
+.box {
+  border-radius: 15px;
+  /* background-image: linear-gradient(#fff, #040c3a); */
+  width: 500px;
+}
+
+.btn {
+  background: #040c3a;
+  color: #fff;
+  border-radius: 10px;
+}
