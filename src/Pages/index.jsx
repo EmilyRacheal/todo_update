@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Hero.module.css";
 import { HiOutlineSearch } from "react-icons/hi";
 import CategoryCard from "../Component/categoryCard/index";
@@ -9,6 +9,12 @@ import { AiOutlinePlus } from "react-icons/ai";
 import Modal from "../Component/Modal/index";
 
 function Index() {
+  const [toggle, setToggle] = useState(false);
+
+  const handleToggle = () => {
+    setToggle(!toggle);
+  };
+
   return (
     <div className={`${styles.hero} relative`}>
       <div className="px-10 py-10">
@@ -32,12 +38,15 @@ function Index() {
       <TodayTask />
       <div
         className={`${styles.addBtn} flex items-center justify-center absolute mb-5`}
+        onClick={handleToggle}
       >
         <AiOutlinePlus size={20} color="white" />
       </div>
-      <div className={`${styles.modalBox}`}>
-        <Modal />
-      </div>
+      {toggle === false ? null : (
+        <div className={`${styles.modalBox}`}>
+          <Modal toggle={handleToggle} />
+        </div>
+      )}
     </div>
   );
 }
