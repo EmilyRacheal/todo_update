@@ -6,14 +6,22 @@ import { useState } from "react";
 function Index({ toggle }) {
   const [taskInput, setTaskInput] = useState("king");
   const [CategoryTask, setCategoryTask] = useState("you");
+  const [addTask, setAddTask] = useState();
+
   const handleTaskInput = (e) => {
     setTaskInput(e.target.value);
   };
   console.log(taskInput);
+
   const handleCategoryInput = (e) => {
     setTaskInput(e.target.value);
   };
   console.log(CategoryTask);
+
+  const handleAddTask = () => {
+    setAddTask({ task: taskInput, category: CategoryTask });
+  };
+  console.log(addTask);
 
   return (
     <div className="flex items-center justify-center w-full">
@@ -45,7 +53,10 @@ function Index({ toggle }) {
             <option value="Coding">Coding</option>
           </select>
         </form>
-        <button className={`${styles.btn} text-sm px-4 py-3 mt-7`}>
+        <button
+          onClick={handleAddTask}
+          className={`${styles.btn} text-sm px-4 py-3 mt-7`}
+        >
           Add Task
         </button>
       </div>
